@@ -52,6 +52,30 @@
   main a {
     color: var(--danger-color);
     transition-duration: 600ms;
+     /* animation is shorthand for:
+    animation-name
+    animation-duration
+    animation-timing-function
+    animation-delay
+    animaltion-direction
+    animation-fill-mode
+    animation-play-state */
+    animation: backflip 1s infinite linear;
+  }
+
+  @keyframes backflip {
+    8% {
+        transform: translateY(-50px) rotateZ(0deg);
+    }
+    25% {
+        transform: translateY(-50px) rotateZ(-180deg);
+    }
+    50% {
+        transform: translate(0px) rotateZ(-360deg);
+    }
+    100% {
+        transform: translate(0px) rotateZ(-360deg);
+    }
   }
   /* end article link transitions */
   
@@ -113,6 +137,15 @@
     text-transform: uppercase;
     cursor: pointer;
     transition: 300ms;
+    /* animation is shorthand for:
+    animation-name
+    animation-duration
+    animation-timing-function
+    animation-delay
+    animaltion-direction
+    animation-fill-mode
+    animation-play-state */
+    animation: hover 3s infinite alternate linear;
   }
   
   main article {
@@ -143,4 +176,10 @@
 
   button:hover {
     transform: translateY(-4px);
+  }
+
+  @keyframes hover {
+    to {
+        transform: translateY(-8px);
+    }
   }
