@@ -39,7 +39,7 @@
   header a {
     font-size: 1.5rem;
     color: var(--off-white);
-    transform: .1s;
+    transition-delay: .3s;
   }
   /* end header link animations */
   
@@ -47,13 +47,19 @@
     background-color: plum;
     transform: translateY(-1px);
   }
-  
+
   /* article link transitions */
   main a {
     color: var(--danger-color);
+    transition-duration: 600ms;
   }
   /* end article link transitions */
   
+  main a:hover {
+    background-color: paleturquoise;
+    transform: translateY(-2px);
+  }
+
   main > article, nav{
     max-width: 1200px;
     margin: 0 auto;
