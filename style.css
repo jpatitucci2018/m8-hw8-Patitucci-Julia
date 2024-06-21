@@ -100,6 +100,7 @@
     border-radius: 12px;
     text-transform: uppercase;
     cursor: pointer;
+    transition: 300ms;
   }
   
   main article {
@@ -126,4 +127,8 @@
     text-transform: uppercase;
     padding: 24px 0;
     color: var(--off-white);
+  }
+
+  button:hover {
+    transform: translateY(-4px);
   }
