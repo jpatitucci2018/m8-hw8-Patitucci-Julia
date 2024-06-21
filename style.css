@@ -39,8 +39,14 @@
   header a {
     font-size: 1.5rem;
     color: var(--off-white);
+    transform: .1s;
   }
   /* end header link animations */
+  
+  header a:hover {
+    background-color: plum;
+    transform: translateY(-1px);
+  }
   
   /* article link transitions */
   main a {
